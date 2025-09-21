@@ -4,49 +4,46 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Feliz Día de las Flores Amarillas</title>
+<!-- Fuente bonita desde Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-html {
-  scroll-behavior: smooth; /* scroll suave */
+  html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #fff8dc;
-  overflow-x: hidden;
-}
-
-.section {
-  min-height: 100vh; /* ocupa toda la pantalla */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  background-color: #fff8dc;  /* amarillo pastel */
+  overflow: hidden;
   text-align: center;
-  padding: 50px 20px;
 }
 
-.top-section h1 {
-  color: #f1c40f;
-  font-size: 4em;
-  margin-bottom: 20px;
-  font-weight: 700;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
-}
-
-.top-section .top-text {
+.top-text {
   font-size: 2em;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-weight: 600;
   color: #d4a017;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
+h1 {
+  color: #f1c40f;
+  font-size: 4em;  /* más grande */
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
 button {
   padding: 20px 40px;
-  font-size: 1.5em;
+  font-size: 1.5em;  /* más grande */
   background-color: #f1c40f;
   border: none;
   border-radius: 12px;
@@ -60,22 +57,18 @@ button:hover {
   transform: scale(1.05);
   background-color: #e0b90f;
 }
-
-/* sección regalo */
-.gift-section {
-  background-color: #fff3b0;
-}
 </style>
 </head>
 <body>
 
-<!-- Sección principal -->
-<div class="section top-section">
-  <h2>🌼 Feliz Día de las Flores Amarillas 🌼</h2>
-  <div class="top-text">Te tengo un regalo espacial para ti</div>
-  <button onclick="document.getElementById('gift').scrollIntoView({ behavior: 'smooth' })">Ir al regalo!</button>
-</div>
+<body>
+
+<h1>🌼 Feliz Día de las Flores Amarillas 🌼</h1>
+<div class="top-text">Te tengo un regalo espacial para ti</div>
+<button onclick="window.location.href='estrellas.html'">Ir al regalo!</button>
+
+</body>
+
 
 </body>
 </html>
-
